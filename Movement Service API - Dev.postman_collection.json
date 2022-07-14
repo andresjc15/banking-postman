@@ -1,0 +1,1300 @@
+{
+	"info": {
+		"_postman_id": "1022c87e-ba7b-4a24-bf57-0ae4e3a01783",
+		"name": "Movement Service API - Dev",
+		"description": "Movement Microservice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15569729"
+	},
+	"item": [
+		{
+			"name": "api/movements",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get movement by id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-10453574",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Cancel movement",
+							"request": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-10453574",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "dates/{start Date}/{end Date}",
+					"item": [
+						{
+							"name": "Get movement between dates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/dates/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"dates",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/dates/:startDate/:endDate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												"dates",
+												":startDate",
+												":endDate"
+											],
+											"variable": [
+												{
+													"key": "startDate",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "endDate",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get quantity of movements between dates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/dates/:startDate/:endDate/quantity",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"dates",
+										":startDate",
+										":endDate",
+										"quantity"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/dates/:startDate/:endDate/quantity",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												"dates",
+												":startDate",
+												":endDate",
+												"quantity"
+											],
+											"variable": [
+												{
+													"key": "startDate",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "endDate",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "date/{date}",
+					"item": [
+						{
+							"name": "Get movement by date",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/date/:date",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"date",
+										":date"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/date/:date",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												"date",
+												":date"
+											],
+											"variable": [
+												{
+													"key": "date",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Get quantity of movement by date",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/date/:date/quantity",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"date",
+										":date",
+										"quantity"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "1954-06-02T21:19:38.902Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/movements/date/:date/quantity",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"movements",
+												"date",
+												":date",
+												"quantity"
+											],
+											"variable": [
+												{
+													"key": "date",
+													"value": "1954-06-02T21:19:38.902Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get all movements",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/movements",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/saving-account/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"saving-account",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/saving-account/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"saving-account",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement in personal credit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/personal-credit/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"personal-credit",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/personal-credit/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"personal-credit",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement in fixed term",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/fixed-term/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"fixed-term",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/fixed-term/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"fixed-term",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement in current account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/current-account/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"current-account",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/current-account/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"current-account",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement in credit card",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/credit-card/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"credit-card",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/credit-card/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"credit-card",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Register movement in business credit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/business-credit/:accountId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"business-credit",
+								":accountId"
+							],
+							"variable": [
+								{
+									"key": "accountId",
+									"value": "-10453574",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"address\": \"anim tempor proident incidid\",\n  \"amount\": -69402889.17522146,\n  \"numberMovement\": 8952197290095,\n  \"id\": -96093706,\n  \"beforeAmount\": -84044979.25146894,\n  \"afterAmount\": 62013295.959071666,\n  \"time\": \"2012-12-23T05:00:01.374Z\",\n  \"description\": \"Duis deserunt exercitation\",\n  \"account\": {\n    \"id\": -91015774,\n    \"hexId\": \"ut ipsum tempor\",\n    \"customerId\": -20095488,\n    \"typeAccount\": {\n      \"id\": -12067209,\n      \"name\": \"fugiat et\",\n      \"sub\": \"Ut in\",\n      \"createdAt\": \"1963-04-24T15:53:31.444Z\",\n      \"updatedAt\": \"1966-04-01T07:24:22.549Z\",\n      \"active\": true\n    },\n    \"numberAccount\": -62162356,\n    \"amount\": 23203019.70805061,\n    \"transactions\": [\n      {\n        \"sitfc\": {},\n        \"qui_\": {},\n        \"pariatur_9\": {},\n        \"ea_17f\": {}\n      },\n      {\n        \"dolor_27\": {},\n        \"adipisicing_9\": {}\n      }\n    ],\n    \"createdAt\": \"2008-12-15T01:01:51.038Z\",\n    \"updatedAt\": \"1996-08-18T10:36:25.316Z\",\n    \"active\": false\n  },\n  \"canceled\": true,\n  \"createdAt\": \"1964-09-29T01:26:29.542Z\",\n  \"updatedAt\": \"2008-05-22T21:48:53.840Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/business-credit/:accountId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"business-credit",
+										":accountId"
+									],
+									"variable": [
+										{
+											"key": "accountId",
+											"value": "-10453574",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get all movements pagination",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/page/:page/term/:term",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"page",
+								":page",
+								"term",
+								":term"
+							],
+							"variable": [
+								{
+									"key": "term",
+									"value": "nulla sed ea i",
+									"description": "(Required) "
+								},
+								{
+									"key": "page",
+									"value": "50305464",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/page/:page/term/:term",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"page",
+										":page",
+										"term",
+										":term"
+									],
+									"variable": [
+										{
+											"key": "term",
+											"value": "nulla sed ea i",
+											"description": "(Required) "
+										},
+										{
+											"key": "page",
+											"value": "50305464",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "get Error",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/error",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"error"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/error",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"error"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Get quantity of movements",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/movements/count",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"movements",
+								"count"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/movements/count",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"movements",
+										"count"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:20300",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,501 @@
+{
+	"info": {
+		"_postman_id": "d02dfdb5-3188-45c5-a6f5-705276cdde26",
+		"name": "Report Service API - Dev",
+		"description": "Report Microservice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15569729"
+	},
+	"item": [
+		{
+			"name": "api/reports",
+			"item": [
+				{
+					"name": "movements",
+					"item": [
+						{
+							"name": "get Movement Report By Dates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/movements/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"movements",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reports/movements/:startDate/:endDate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reports",
+												"movements",
+												":startDate",
+												":endDate"
+											],
+											"variable": [
+												{
+													"key": "startDate",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "endDate",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "get Movement Report By Date",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/movements/:date",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"movements",
+										":date"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reports/movements/:date",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reports",
+												"movements",
+												":date"
+											],
+											"variable": [
+												{
+													"key": "date",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "accounts",
+					"item": [
+						{
+							"name": "get Report By Dates",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/accounts/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"accounts",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reports/accounts/:startDate/:endDate",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reports",
+												"accounts",
+												":startDate",
+												":endDate"
+											],
+											"variable": [
+												{
+													"key": "startDate",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												},
+												{
+													"key": "endDate",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "get Report By Date",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/accounts/:date",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"accounts",
+										":date"
+									],
+									"variable": [
+										{
+											"key": "date",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/reports/accounts/:date",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"reports",
+												"accounts",
+												":date"
+											],
+											"variable": [
+												{
+													"key": "date",
+													"value": "1963-11-29T13:26:55.098Z",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Personal Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/reports/personal-accounts/:startDate/:endDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"reports",
+								"personal-accounts",
+								":startDate",
+								":endDate"
+							],
+							"variable": [
+								{
+									"key": "startDate",
+									"value": "1963-11-29T13:26:55.098Z",
+									"description": "(Required) "
+								},
+								{
+									"key": "endDate",
+									"value": "1963-11-29T13:26:55.098Z",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/personal-accounts/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"personal-accounts",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "get Enterprise Report",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/reports/enterprise-accounts/:startDate/:endDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"reports",
+								"enterprise-accounts",
+								":startDate",
+								":endDate"
+							],
+							"variable": [
+								{
+									"key": "startDate",
+									"value": "1963-11-29T13:26:55.098Z",
+									"description": "(Required) "
+								},
+								{
+									"key": "endDate",
+									"value": "1963-11-29T13:26:55.098Z",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/reports/enterprise-accounts/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"reports",
+										"enterprise-accounts",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										},
+										{
+											"key": "endDate",
+											"value": "1963-11-29T13:26:55.098Z",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:20400",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "49587656-5562-4934-b6c7-0d7a615172d4",
+		"name": "Bootcoin Service API - Dev",
+		"description": "Bootcoin Microservice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15569729"
+	},
+	"item": [
+		{
+			"name": "api/bootcoin",
+			"item": [
+				{
+					"name": "get Boot Coin Values",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/bootcoin",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bootcoin"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bootcoin",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bootcoin"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "change Value",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/bootcoin/register/15.24",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bootcoin",
+								"register",
+								"15.24"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bootcoin/register/:value",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bootcoin",
+										"register",
+										":value"
+									],
+									"variable": [
+										{
+											"key": "value",
+											"value": "56565644.75991571",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "get Boot Coin Value",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/bootcoin/value",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"bootcoin",
+								"value"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bootcoin/value",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bootcoin",
+										"value"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:20500",
+			"type": "string"
+		}
+	]
+}

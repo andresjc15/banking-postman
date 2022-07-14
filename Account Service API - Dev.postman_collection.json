@@ -1,0 +1,1208 @@
+{
+	"info": {
+		"_postman_id": "f592f745-3623-41da-9a2c-76fac481bbd3",
+		"name": "Account Service API - Dev",
+		"description": "Account Microservice API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15569729"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "types",
+					"item": [
+						{
+							"name": "get Types",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"types"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/types",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"types"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -339936,\n  \"name\": \"et amet aute\",\n  \"sub\": \"anim fugiat labore\",\n  \"createdAt\": \"1963-04-16T00:11:43.681Z\",\n  \"updatedAt\": \"1944-11-16T05:28:05.844Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"types"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -339936,\n  \"name\": \"et amet aute\",\n  \"sub\": \"anim fugiat labore\",\n  \"createdAt\": \"1963-04-16T00:11:43.681Z\",\n  \"updatedAt\": \"1944-11-16T05:28:05.844Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/types",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"types"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -339936,\n  \"name\": \"et amet aute\",\n  \"sub\": \"anim fugiat labore\",\n  \"createdAt\": \"1963-04-16T00:11:43.681Z\",\n  \"updatedAt\": \"1944-11-16T05:28:05.844Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/types",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"types"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -339936,\n  \"name\": \"et amet aute\",\n  \"sub\": \"anim fugiat labore\",\n  \"createdAt\": \"1963-04-16T00:11:43.681Z\",\n  \"updatedAt\": \"1944-11-16T05:28:05.844Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/types",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"types"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "get Type",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/types/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"types",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "-98209737",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/types/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"types",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-98209737",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "accounts",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "Get account by id",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-98209737",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/accounts/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"accounts",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-98209737",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "Register delete account",
+									"request": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "-98209737",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/accounts/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"accounts",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "-98209737",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Get all accounts",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Update account",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -74859292,\n  \"hexId\": \"fugiat\",\n  \"customerId\": 28095252,\n  \"typeAccount\": {\n    \"id\": 14165796,\n    \"name\": \"magna ci\",\n    \"sub\": \"laboru\",\n    \"createdAt\": \"1963-08-23T08:41:35.192Z\",\n    \"updatedAt\": \"1980-08-22T15:52:58.837Z\",\n    \"active\": false\n  },\n  \"numberAccount\": 58723515,\n  \"amount\": -87339072.81993076,\n  \"transactions\": [\n    {\n      \"magna_7\": {}\n    },\n    {\n      \"mollit_c09\": {},\n      \"culpa8\": {}\n    }\n  ],\n  \"createdAt\": \"2016-11-10T05:24:54.061Z\",\n  \"updatedAt\": \"2009-08-17T22:21:36.540Z\",\n  \"active\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Saving account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/saving-account",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"saving-account"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/saving-account",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"saving-account"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Personal credit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/personal-credit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"personal-credit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/personal-credit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"personal-credit"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Fixed term account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/fixed-term",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"fixed-term"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/fixed-term",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"fixed-term"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Current account",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/current-account",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"current-account"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/current-account",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"current-account"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Credit card",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/credit-card",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"credit-card"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/credit-card",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"credit-card"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Register Bussiness credit",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/business-credit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"business-credit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": -39524660,\n  \"hexId\": \"quis\",\n  \"customerId\": -67099681,\n  \"typeAccount\": {\n    \"id\": -61171159,\n    \"name\": \"irure consequat non Lorem\",\n    \"sub\": \"dolore\",\n    \"createdAt\": \"2011-10-08T07:57:30.024Z\",\n    \"updatedAt\": \"1972-11-19T05:01:17.947Z\",\n    \"active\": true\n  },\n  \"numberAccount\": 29688852,\n  \"amount\": -45102176.89660112,\n  \"transactions\": [\n    {\n      \"tempor7f\": {},\n      \"ipsum_1d2\": {}\n    },\n    {\n      \"sit3\": {},\n      \"ipsum_11\": {}\n    }\n  ],\n  \"createdAt\": \"1965-08-26T12:00:40.355Z\",\n  \"updatedAt\": \"1992-10-22T21:10:25.112Z\",\n  \"active\": false\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/business-credit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"business-credit"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "get Error",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/error",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"error"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/error",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"error"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "get Customers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/api/accounts/client/customers",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"accounts",
+										"client",
+										"customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/accounts/client/customers",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"accounts",
+												"client",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:20200",
+			"type": "string"
+		}
+	]
+}
